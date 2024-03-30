@@ -1,0 +1,79 @@
+:root {
+    /* Primary */
+    --Green: hsl(75, 94%, 57%);
+
+    /* --Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--OffBlack);
+}
+
+.card {
+    width: 18rem;
+    text-align: center;
+    font-family: "inter", sans-serif;
+    background-color: var(--DarkGrey);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.card__profile {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+.card__profile-img {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+.card__number {
+    color: var(--White);
+    margin-top: 2rem;
+}
+
+.card__city {
+    color: var(--Green);
+    margin-top: .5rem;
+    font-size: .7rem;
+}
+
+.card__description {
+    color: var(--White);
+    font-size: .7rem;
+    margin: 1rem 0;
+}
+
+.card__networks {
+    color: var(--White);
+    background-color: var(--Grey);
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.card__networks:hover {
+    cursor: pointer;
+    color: var(--OffBlack);
+    background-color: var(--Green);
+    font-weight: 600;
+}
